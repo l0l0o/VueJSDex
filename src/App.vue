@@ -11,12 +11,12 @@ let pkmnURL = String;
 //Fetch all items on mounted app
 const fetchAllPkmn = async (filter) => {
   if (filter == null || filter == 0) {
-    pkmnURL = "https://tyradex.tech/api/v1/pokemon";
+    pkmnURL = "https://tyradex.app/api/v1/pokemon";
   } else {
     if (!isNaN(filter)) {
-      pkmnURL = `https://tyradex.tech/api/v1/gen/${filter}`;
+      pkmnURL = `https://tyradex.app/api/v1/gen/${filter}`;
     } else {
-      pkmnURL = `https://tyradex.tech/api/v1/types/${filter}`;
+      pkmnURL = `https://tyradex.app/api/v1/types/${filter}`;
     }
   }
 
